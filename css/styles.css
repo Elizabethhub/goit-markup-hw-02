@@ -1,12 +1,14 @@
 :root {
     --primary-text-color: #757575;
     --title-text-color:  #212121;
-    --accent-text-color:  #2196F3;  
+    --accent-text-color:  #2196F3;
+    --footer-text-color: #fff;
 }
 
 .page {
     background-color: #FFF;
     color: var(--primary-text-color);
+    font-family: Roboto;
 }
 
 ul {
@@ -22,12 +24,28 @@ h2-h3 #212121
 
 .logo {
     color: #000;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+/* identical to box height */
+    letter-spacing: 0.03em;
+    width: 145px;
+height: 31px;
+}
+.logo.footer, .adress {
+    color: var(--footer-text-color);
 }
 .colortext {
     color: var(--accent-text-color);
 }
 .site-nav a {
     color: var(--title-text-color);
+    height: 16px;
+}
+.site-nav .link.current {
+    color: var(--accent-text-color);
 }
 .contacts-section-link, .contacts-section-link-tel {
     color: rgba(255, 255, 255, 0.6)
@@ -43,25 +61,51 @@ h2-h3 #212121
 .contacts-section-link-tel:hover,
 .contacts-section-link-tel:focus
  {
-color: var(--accent-text-color);
+    color: var(--accent-text-color);
 }
 .contacts-section-link, .logo, .contacts-section-link-tel {
     text-decoration: none;
 }
-
+.hero {
+    background: #2F303A;
+}
 .features-title, h2, h3 {
     color: var(--title-text-color);
 }
+.features-blocks {
+width: 270px;
+height: 101px;
+left: 215px;
+top: 774px;
+}
 h1, .button {color: white;}
+h1 {
+font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 44px;
+line-height: 60px;
+/* or 136% */
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
 .button {
-    background-color: var(--accent-text-color);
+background-color: var(--accent-text-color);
 border-color: var(--accent-text-color);
-position: absolute;
 width: 200px;
 height: 50px;
-left: 700px;
-top: 430px;
-border-radius: 4;
-background-image:;
+border-radius: 4px;
 }
-
+.features-title {
+    text-transform: uppercase;
+}
+.footer {
+    background-color: #2F303A;
+}
+.adress {
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+}
