@@ -1,0 +1,67 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color:  #212121;
+    --accent-text-color:  #2196F3;  
+}
+
+.page {
+    background-color: #FFF;
+    color: var(--primary-text-color);
+}
+
+ul {
+    list-style: none;
+}
+/* цвет осн текста #212121, #757575
+фокус #2196F3
+лого 000000#, #2196F3
+контакты header #757575, footer rgba(255, 255, 255, 0.6); 
+h1 #FFFFFF
+h2-h3 #212121
+ */
+
+.logo {
+    color: #000;
+}
+.colortext {
+    color: var(--accent-text-color);
+}
+.site-nav a {
+    color: var(--title-text-color);
+}
+.contacts-section-link, .contacts-section-link-tel {
+    color: rgba(255, 255, 255, 0.6)
+}
+.contacts-section-link.header, .contacts-section-link-tel.header {
+    color: inherit;
+  }
+
+.site-nav :hover,
+.site-nav :focus,
+.contacts-section-link:focus,
+.contacts-section-link:hover,
+.contacts-section-link-tel:hover,
+.contacts-section-link-tel:focus
+ {
+color: var(--accent-text-color);
+}
+.contacts-section-link, .logo, .contacts-section-link-tel {
+    text-decoration: none;
+}
+
+.features-title, h2, h3 {
+    color: var(--title-text-color);
+}
+h1, .button {color: white;}
+.button {
+    background-color: var(--accent-text-color);
+border-color: var(--accent-text-color);
+position: absolute;
+width: 200px;
+height: 50px;
+left: 700px;
+top: 430px;
+border-radius: 4;
+background-image:;
+}
+
