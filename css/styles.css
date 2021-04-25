@@ -8,7 +8,8 @@
 .page {
     background-color: #FFF;
     color: var(--primary-text-color);
-    font-family: Roboto;
+    font-family: Roboto; sans-serif;
+    letter-spacing: 0.03em;
 }
 
 ul {
@@ -21,18 +22,14 @@ ul {
 h1 #FFFFFF
 h2-h3 #212121
  */
-
+.page-header {
+    letter-spacing: 0.02em;
+}
 .logo {
     color: #000;
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
+    font-family: Raleway; sans-serif;
     font-size: 26px;
-    line-height: 31px;
-/* identical to box height */
-    letter-spacing: 0.03em;
-    width: 145px;
-height: 31px;
+    line-height: 1.19;
 }
 .logo.footer, .adress {
     color: var(--footer-text-color);
@@ -42,7 +39,11 @@ height: 31px;
 }
 .site-nav a {
     color: var(--title-text-color);
-    height: 16px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    text-decoration: none;
 }
 .site-nav .link.current {
     color: var(--accent-text-color);
@@ -52,6 +53,10 @@ height: 31px;
 }
 .contacts-section-link.header, .contacts-section-link-tel.header {
     color: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
   }
 
 .site-nav :hover,
@@ -69,43 +74,94 @@ height: 31px;
 .hero {
     background: #2F303A;
 }
-.features-title, h2, h3 {
-    color: var(--title-text-color);
-}
-.features-blocks {
-width: 270px;
-height: 101px;
-left: 215px;
-top: 774px;
-}
+
 h1, .button {color: white;}
 h1 {
-font-family: Roboto;
-font-style: normal;
 font-weight: 900;
 font-size: 44px;
-line-height: 60px;
-/* or 136% */
+line-height: 1.36;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 }
 .button {
-background-color: var(--accent-text-color);
-border-color: var(--accent-text-color);
-width: 200px;
-height: 50px;
-border-radius: 4px;
+    font-family: inherit;
+    background-color: var(--accent-text-color);
+    border-color: var(--accent-text-color);
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+.button.portfolio {
+    background: #F5F4FA;
+    border-color: #F5F4FA;
+    font-weight: 500;
+    line-height: 1.62;
+    text-align: center;
+    color: #212121;
+}
+.button-hover :hover,
+.button-hover :focus {
+    color: #fff;
+    background-color: var(--accent-text-color);
+    border-color: var(--accent-text-color);
+}
+.portfolio-cards a {
+    text-decoration: none;
+}
+.card-name {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: #212121;
+}
+.card-description {
+    font-size: 16px;
+    line-height: 1.87;
+    color: #757575;
+}
+.features-title, h2, h3 {
+    color: var(--title-text-color);
+}
+.features-blocks {
+    width: 270px;
+    height: 101px;
+    left: 215px;
+    top: 774px;
+    font-size: 14px;
+    line-height: 1.71;
 }
 .features-title {
     text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.14;
+}
+.section-team {
+    background: #F5F4FA;
+}
+.section-title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+.name-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+}
+.position {
+    font-size: 16px;
+    line-height: 1.2;
 }
 .footer {
     background-color: #2F303A;
 }
 .adress {
-font-style: normal;
-font-weight: normal;
 font-size: 14px;
-line-height: 24px;
+line-height: 1.71;
+font-style: normal;
 }
